@@ -1,0 +1,17 @@
+<div class="thumbnail photo clearfix" data-id="{{ id }}" data-like="{{ like }}">
+  <div class="actions">
+    <a class="btn like-btn" href="#"><i class="icon-heart"></i></a>
+  </div>
+  <a href="{{ link }}" target="_blank">
+    <img src="{{ src }}">
+  </a>
+  <div class="caption">
+    <h6 class="timeago" title="{{ time }}">{{ time }}</h6>
+    <blockquote>
+      {{# text }}
+        <p>{{ text }}</p>
+        <small>{{ username }}</small>
+      {{/ text }}
+    </blockquote>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+@import "globals";
+
+#map {
+  height: 300px;
+  width: 100%;
+  @include rounded-borders(3px);
+  border: 3px #ccc solid;
+}

@@ -1,0 +1,20 @@
+development:
+  host: localhost
+  database: snapshot_development
+  allow_dynamic_fields: false
+
+test:
+  host: localhost
+  database: snapshot_test
+  allow_dynamic_fields: false
+
+# set these environment variables on your prod server
+production:
+  uri: <%= ENV['MONGOLAB_URI'] %>
+  allow_dynamic_fields: false
+
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019

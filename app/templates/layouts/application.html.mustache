@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snapshot</title>
+  {{{ stylesheets }}}
+  {{{ javascripts }}}
+  {{{ csrf_meta_tags }}}
+</head>
+<body data-controller="{{ controller }}" data-action="{{ action }}">
+
+  {{> navbar }}
+  <div class="container">
+    <header>
+      {{> notifications }}
+    </header>
+    <div id="main" role="main">
+      {{{ yield }}}
+    </div>
+    <hr>
+    <footer>
+      <p>&copy; NewCo {{ year }}</p>
+    </footer>
+  </div>
+
+{{{ templates }}}
+
+</body>
+</html>

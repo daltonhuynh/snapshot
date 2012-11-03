@@ -1,0 +1,7 @@
+development:
+  app_id: REPLACE_ME
+  app_secret: REPLACE_ME
+
+production:
+  app_id: REPLACE_ME
+  app_secret: REPLACE_ME

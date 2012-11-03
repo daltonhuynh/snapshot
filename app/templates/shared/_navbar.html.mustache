@@ -1,0 +1,34 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      {{{ logo }}}
+      <ul class="nav pull-left">
+        {{# links }}
+          <li>{{{ element }}}</li>
+        {{/ links }}
+      </ul>
+      <ul class="nav pull-right">
+        {{# right_nav }}
+          {{# links }}
+            <li>{{{ element }}}</li>
+          {{/ links }}
+          {{# dropdown }}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" id="user" data-toggle="dropdown">
+                <span class="profile-pic">
+                  <img src="{{ profile_pic }}" width="32" height="32">
+                </span>
+                {{ name }} <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                {{# links }}
+                  <li>{{{ element }}}</li>
+                {{/ links }}
+              </ul>
+            </li>
+          {{/ dropdown }}
+        {{/ right_nav }}
+      </ul>
+    </div>
+  </div>
+</div>

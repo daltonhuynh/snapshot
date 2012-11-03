@@ -1,0 +1,74 @@
+@import "globals";
+
+.photo {
+  width: 306px;
+  margin-bottom: 5px;
+	float: left;
+  blockquote {
+    max-width: 250px;
+  }
+}
+
+#intro {
+  position: relative;
+  margin-left: 50px;
+  #photo-wall {
+    li {
+      position: relative;
+      float: left;
+      height: 150px;
+      .tiny-loc {
+        font-family: Courier;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#sell {
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 130px;
+
+  h1 {
+    font-size: 200px !important;
+    color: #fff !important;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.city-info {
+  height: 230px;
+
+  #city-map {
+    margin-right: 30px;
+    float: left;
+    height: 230px;
+    width: 50%;
+  }
+
+  #city-detail {
+    h1 {
+      text-transform: uppercase;
+    }
+    .time {
+      color: #888888;
+    }
+    #featured {
+      li {
+        float: left;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

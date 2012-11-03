@@ -1,0 +1,5 @@
+production: &PROD
+  id: REPLACE_ME
+  secret: REPLACE_ME
+development:
+  <<: *PROD

@@ -1,0 +1,18 @@
+<center><h1>Recent Activity</h1></center>
+
+<ul class="thumbnails">
+{{# liked }}
+  <li>
+    <div class="thumbnail">
+      <a href="{{ link }}" target="_blank">
+        <img src="{{ src }}">
+      </a>
+      <div class="caption">
+        <p>
+          {{ usernames }}
+        </p>
+      </div>
+    </div>
+  </li>
+{{/ liked }}
+</ul>

@@ -1,0 +1,29 @@
+<div class="city-info well">
+  <div id="city-map"></div>
+  <div id="city-detail">
+    <div>
+      <h1>{{ city_name }}</h3>
+      <span class="time">{{ current_time }}</span>
+    </div>
+    <div id="featured">
+      <h4>Now Featuring</h4>
+      <ul class="unstyled">
+        {{# users }}
+          <li>
+            {{# user }}
+              <img src="{{ profile_picture }}" rel="tooltip" data-original-title="{{ username }}" width="50" height="50">
+            {{/ user }}
+          </li>
+        {{/ users }}
+      <ul>
+    </div>
+  </div>
+</div>
+
+<div id="photos"></div>
+
+<script type="text/javascript">
+  $(function(){
+    Snapshot.init({{{ init }}})
+  })
+</script>

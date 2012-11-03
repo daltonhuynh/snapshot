@@ -1,0 +1,32 @@
+@import "globals";
+
+body {
+  padding-top: 37px;
+}
+
+.container {
+  width: 980px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.actions {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  display: none;
+}
+
+#user {
+  padding-left: 45px;
+  .profile-pic {
+    img {
+      top: 5px;
+      left: 5px;
+      position: absolute;
+      @include rounded-borders(3px)
+    }
+  }
+}

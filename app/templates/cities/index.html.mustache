@@ -1,0 +1,27 @@
+{{^ user_signed_in? }}
+  <div class="hero-unit clearfix">
+    <div id="intro">
+      <ul id="photo-wall" class="unstyled"></ul>
+      <center>
+        <div id="sell">
+          <h1>Now</h1>
+          <p>What people around the world are seeing</p>
+          <p>
+            <a class="btn btn-primary btn-large" href="{{ sign_up_path }}">
+              Signup with Facebook
+            </a>
+          </p>
+        </div>
+      </center>
+    </div>
+  </div>
+{{/ user_signed_in? }}
+{{# user_signed_in? }}
+  <div id="map"></div>
+{{/ user_signed_in? }}
+
+<script type="text/javascript">
+  $(function(){
+    Snapshot.init({{{ init }}})
+  })
+</script>
